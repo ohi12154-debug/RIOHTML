@@ -1,0 +1,47 @@
+body {
+    background-color: aqua;
+}
+
+header {
+    background-color: brown;
+}
+
+nav {
+    background-color: lightcoral;
+}
+
+#intro {
+    background-color: blanchedalmond;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-section-content h2 {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bestsellers,
+footer {
+    background-color: lightyellow;
+}
+
+header,
+nav,
+#intro,
+#main-section-content,
+#bestsellers,
+footer {
+    border: 1px solid black;
+}
+
+header,
+nav,
+#main-section {
+    border-radius: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
