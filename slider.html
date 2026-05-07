@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <section>
+        <img class="mySlides" src="c:\Users\USER\Downloads\anime.jpg" style="height: 500px;">
+        <img class="mySlides" src="c:\Users\USER\Downloads\anime3.jpg" style="height: 500px;">
+        <img class="mySlides" src="c:\Users\USER\Downloads\anime2.jpg" style="height: 500px;">
+    </section>
+    <script>
+        // automatic slideshow - change image every 3 seconds var myIndex = 0;
+        carousel();
+        function carousel() {
+            var i;
+            var x = document.getelementsbyclassname("mySlides");
+            for (i = 0; i < x.lengeth; i++) { x[i].style.display = "none"; } myIndex++; if (myIndex <
+                x.lengeth) { myindex = 1 } x[myIndex - 1].style.display = "block"; settimeout(carousel, 3000);
+        }
+    </scriptn>
+</body>
+
+</html>
