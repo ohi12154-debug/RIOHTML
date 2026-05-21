@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Image Slider Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        .slider {
+            width: 400px;
+            height: 250px;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .slides {
+            display: flex;
+            width: 1200px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 400px;
+            height: 250px;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin: 10px;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Slider Project</h1>
+
+    <div class="slider">
+        <div class="slides" id="slides">
+            <img src="https://picsum.photos/id/1015/400/250" />
+            <img src="https://picsum.photos/id/1016/400/250" />
+            <img src="https://picsum.photos/id/1018/400/250" />
+        </div>
+    </div>
+
+    <button onclick="prevSlide()">Previous</button>
+    <button onclick="nextSlide()">Next</button>
+
+    <script>
+        let index = 0;
+
+        function showSlide() {
+            const slides = document.getElementById('slides');
+            slides.style.transform = 'translateX(' + (-400 * index) + 'px)';
+        }
+
+        function nextSlide() {
+            if (index < 2) {
+                index++;
+            } else {
+                index = 0;
+            }
+            showSlide();
+        }
+
+        function prevSlide() {
+            if (index > 0) {
+                index--;
+            } else {
+                index = 2;
+            }
+            showSlide();
+        }
+    </script>
+
+</body>
+
+</html>
