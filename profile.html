@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Achievement Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f7fb;
+            color: #333;
+        }
+
+        header {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 40px;
+        }
+
+        nav {
+            background: #34495e;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        section {
+            padding: 40px;
+        }
+
+        .about,
+        .achievements,
+        .gallery,
+        .contact {
+            background: white;
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .achievement-box {
+            background: #ecf0f1;
+            padding: 20px;
+            margin: 15px 0;
+            border-left: 5px solid #3498db;
+            border-radius: 5px;
+        }
+
+        .gallery img {
+            width: 250px;
+            height: 180px;
+            margin: 10px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>My School Achievement Portfolio</h1>
+        <p>Welcome to my portfolio website</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! My name is Rio. I am a student who loves learning,
+                participating in competitions, and achieving success in school.
+                This portfolio website shows my school achievements and activities.
+            </p>
+        </div>
+    </section>
+
+    <section id="achievements">
+        <div class="achievements">
+            <h2>My Achievements</h2>
+
+            <div class="achievement-box">
+                🏆 Got 1st place in Science Fair
+            </div>
+
+            <div class="achievement-box">
+                📚 Achieved GPA 5 in exams
+            </div>
+
+            <div class="achievement-box">
+                🎨 Won Art Competition
+            </div>
+
+            <div class="achievement-box">
+                ⚽ Champion in School Sports
+            </div>
+
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="gallery">
+            <h2>Achievement Gallery</h2>
+
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Achievement">
+            <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0" alt="School">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7" alt="Award">
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact">
+            <h2>Contact Me</h2>
+
+            <p>Email: student@email.com</p>
+            <p>School: My School Name</p>
+
+            <br>
+
+            <button onclick="showMessage()">Click Here</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 My School Achievement Portfolio</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Thank you for visiting my portfolio website!");
+        }
+    </script>
+
+</body>
+
+</html>
