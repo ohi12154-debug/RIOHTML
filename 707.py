@@ -1,0 +1,22 @@
+print("===== Complete Your Slam =====")
+
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+favorite_color = input("What is your favorite color? ")
+favorite_food = input("What is your favorite food? ")
+favorite_subject = input("What is your favorite subject? ")
+hobby = input("What is your hobby? ")
+dream_job = input("What is your dream job? ")
+best_friend = input("Who is your best friend? ")
+
+print("\n===== Your Slam Book =====")
+print("Name           :", name)
+print("Age            :", age)
+print("Favorite Color :", favorite_color)
+print("Favorite Food  :", favorite_food)
+print("Favorite Subject:", favorite_subject)
+print("Hobby          :", hobby)
+print("Dream Job      :", dream_job)
+print("Best Friend    :", best_friend)
+
+print("\nThank you for completing your slam! ")
